@@ -1,4 +1,4 @@
-# 🛜Enterprise VLAN Network Lab🛜
+# 🛜 Enterprise VLAN Network Lab 🛜
 
 > ### Project Overview
  This project simulates an enterprise network for a medium-sized company with three departments (HR, IT, Sales) using Cisco Packet Tracer. The network leverages VLAN segmentation, inter-VLAN routing, DHCP, and Access Control Lists (ACLs) to ensure efficient traffic management, dynamic IP allocation, and secure inter-departmental access control. The project demonstrates proficiency in CCNA-level networking concepts, including subnetting, Cisco IOS configuration, and network troubleshooting.

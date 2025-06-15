@@ -1,4 +1,4 @@
-# 🌐 VLAN Configuration with DHCP and Inter-VLAN Routing 🌐
+# 🌐 VLAN Configuration with DHCP and Inter-VLAN Routing 
 
 > ### Project Overview
  This project demonstrates the configuration of three Virtual Local Area Networks (VLANs) in a Cisco Packet Tracer environment, with a router acting as a DHCP server to dynamically assign IP addresses to devices in each VLAN. The network consists of two switches, one router, and nine PCs, divided into three VLANs: VLAN 10 ("Sales"), VLAN 20 ("Engineering"), and VLAN 30 ("Management"). The project showcases VLAN setup, trunk link configuration, inter-VLAN routing using a router-on-a-stick, and DHCP configuration, with connectivity tested using the ping command. This project highlights VLAN segmentation, trunking, subinterface configuration, and dynamic IP allocation.

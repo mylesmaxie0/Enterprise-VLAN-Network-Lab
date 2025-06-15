@@ -1,31 +1,36 @@
-# 🛜 Enterprise VLAN Network Lab 🛜
+# 🌐 VLAN Configuration with DHCP and Inter-VLAN Routing 🌐
 
 > ### Project Overview
- This project simulates an enterprise network for a medium-sized company with three departments (HR, IT, Sales) using Cisco Packet Tracer. The network leverages VLAN segmentation, inter-VLAN routing, DHCP, and Access Control Lists (ACLs) to ensure efficient traffic management, dynamic IP allocation, and secure inter-departmental access control. The project demonstrates proficiency in CCNA-level networking concepts, including subnetting, Cisco IOS configuration, and network troubleshooting.
+ This project demonstrates the configuration of three Virtual Local Area Networks (VLANs) in a Cisco Packet Tracer environment, with a router acting as a DHCP server to dynamically assign IP addresses to devices in each VLAN. The network consists of two switches, one router, and nine PCs, divided into three VLANs: VLAN 10 ("Sales"), VLAN 20 ("Engineering"), and VLAN 30 ("Management"). The project showcases VLAN setup, trunk link configuration, inter-VLAN routing using a router-on-a-stick, and DHCP configuration, with connectivity tested using the ping command. This project highlights VLAN segmentation, trunking, subinterface configuration, and dynamic IP allocation.
 
-Key Skills: VLAN Configuration, Inter-VLAN Routing, DHCP, ACLs, Subnetting, Cisco IOS, Network Troubleshooting
+ Key Skills: VLAN Configuration, Inter-VLAN Routing, DHCP, ACLs, Subnetting, Cisco IOS, Network Troubleshooting
 #
+
 
 > ### Project Objectives
-- Segment network traffic into three VLANs for HR, IT, and Sales departments.
-- Enable inter-VLAN routing using a router-on-a-stick configuration.
-- Configure DHCP for automatic IP allocation across VLANs.
-- Implement ACLs to restrict HR access to IT resources while allowing internet access.
-- Verify connectivity and security through ping tests and troubleshooting.
-
+- Configure three VLANs to segment network traffic.
+- Set up trunk links between switches and the router to carry VLAN traffic.
+- Implement inter-VLAN routing using a router-on-a-stick configuration.
+- Configure the router as a DHCP server to assign IP addresses dynamically for each VLAN.
+- Verify connectivity and DHCP functionality across all VLANs.
+- Document the setup process.
 #
-> ### Topology Overview
-The topology simulates a medium-sized enterprise network with three departments (HR, IT, Sales), each assigned a VLAN (10, 20, 30). A router-on-a-stick handles inter-VLAN routing, a DHCP server assigns IPs dynamically, and ACLs restrict HR access to IT resources. The network includes switches for department connectivity, a router for routing, and PCs to simulate users.
-
-
+> ### Network Diagram
 #
 
 
 
 
 
-> ### Key Takeaways
-This project showcases my ability to design, configure, and troubleshoot an enterprise-grade network using Cisco technologies. It demonstrates practical application of CCNA concepts like VLANs, inter-VLAN routing, DHCP, and network security,
 
+
+
+> ### Learning Outcomes
+- Mastered configuration of multiple VLANs for network segmentation.
+- Learned to set up trunk links for VLAN traffic across switches.
+- Implemented router-on-a-stick for inter-VLAN routing across three VLANs.
+- Configured and verified DHCP services for dynamic IP allocation in multiple VLANs.
+- Gained experience with Cisco IOS commands for switches, routers, and DHCP.
+- Developed skills in network testing, troubleshooting, and documentation.
 
 

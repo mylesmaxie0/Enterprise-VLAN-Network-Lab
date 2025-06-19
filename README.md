@@ -20,7 +20,7 @@ This project demonstrates the configuration of three Virtual Local Area Networks
 > ###  Devices
 - 10 PCs (PC1 - PC5 for VLAN 10 "Sales", PC6 & PC7 for VLAN 20 "Enginnering", PC8 - PC10 for VLAN 30 "IT")
 
-> ### IP Addressing
+> ### IP Address Scheme
 
 #### VLAN 10 (Sales): 10.0.0.0/26 (10.0.0.0–10.0.0.63)
 - PCs: Dynamically assigned from 10.0.0.10–10.0.0.50

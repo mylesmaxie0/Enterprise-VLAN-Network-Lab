@@ -61,6 +61,25 @@ Trunk ports are essential for router-on-a-stick. They:
 - Control VLAN propagation by specifying allowed VLANs
 <img width="599" height="125" alt="Screenshot 2025-08-08 at 6 49 39 PM" src="https://github.com/user-attachments/assets/6654d151-5821-45d7-bbd9-00b362ef4a64" />
 
+#
+### Router Physical Interface Activation
+The physical interface must be active before any subinterfaces can function. This single interface will handle traffic for all VLANs through subinterfaces.
+
+<img width="719" height="275" alt="Screenshot 2025-08-08 at 6 56 43 PM" src="https://github.com/user-attachments/assets/a0825b64-11e5-4ece-993e-51d7261460c4" />
+
+
+
+#
+### Subinterface Configuration (Router-on-a-Stick)
+Creates logical router interfaces for each VLAN, enabling inter-VLAN routing.
+
+Subinterfaces enable the router to:
+- Route between VLANs (inter-VLAN routing)
+- Serve as the default gateway for each department
+- Process tagged frames from specific VLANs
+- Maintain separate routing tables per VLAN
+<img width="787" height="707" alt="Screenshot 2025-08-08 at 7 13 23 PM" src="https://github.com/user-attachments/assets/6ad65f5e-99b6-4a79-9069-f5cb7b49eb50" />
+
 
 #
 ### Learning Outcomes

@@ -37,14 +37,20 @@ Basic security and device identification are essential before implementing advan
 
 
 ## Creating and Configuring VLANS
+
+### VLAN Configurations
 VLANs create separate broadcast domains on a single physical switch. This provides:
 - Security: Departments can't see each other's traffic by default.
 - Performance: Reduced broadcast traffic in each segment.
 - Management: Easier troubleshooting and policy application.
 
-### VLAN Configurations
+<img width="506" height="451" alt="Screenshot 2025-08-08 at 6 37 41 PM" src="https://github.com/user-attachments/assets/a11a218a-9437-4dac-9c1f-eff143b71e7f" />
 
+#
+### Assigning Switch Ports to VLANs
+Access ports connect end devices (PCs) to their designated VLAN. Traffic from these devices remains untagged - the switch handles VLAN tagging internally. Without proper VLAN assignment, devices would all be in VLAN 1 (default).
 
+<img width="463" height="270" alt="Screenshot 2025-08-08 at 6 43 21 PM" src="https://github.com/user-attachments/assets/11072914-09c5-46bf-b998-2d62a545b64d" />
 
 
 #

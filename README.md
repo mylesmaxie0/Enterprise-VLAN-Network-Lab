@@ -12,6 +12,7 @@ This project demonstrates fundamental networking concepts by implementing VLAN s
 
 #
 > ### Network Topology
+<img width="697" height="589" alt="Screenshot 2025-08-08 at 1 33 41 PM" src="https://github.com/user-attachments/assets/9f3b8f59-b8af-4430-bce5-5736acb35b1d" />
 
 
 ### VLAN Scheme

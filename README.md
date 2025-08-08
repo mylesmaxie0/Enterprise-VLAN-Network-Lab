@@ -25,6 +25,22 @@ This project demonstrates fundamental networking concepts by implementing VLAN s
 | 99    | Managment     | 192.168.99.0/24      | Native VLAN     |
 #
 
+
+## Device Configuration
+
+### Switch Initial Setup
+<img width="531" height="188" alt="Screenshot 2025-08-08 at 6 07 50 PM" src="https://github.com/user-attachments/assets/d98bfe40-e115-4a83-93f0-f0f3b14c9093" />
+
+### Router Initial Setup
+<img width="525" height="170" alt="Screenshot 2025-08-08 at 6 10 50 PM" src="https://github.com/user-attachments/assets/7f5011b5-529d-4c06-8515-248443bbef15" />
+
+
+
+
+
+
+
+#
 ### Learning Outcomes
 - VLAN creation and management
 - Switch port assignment and configuration

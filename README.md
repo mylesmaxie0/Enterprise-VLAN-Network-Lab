@@ -28,6 +28,7 @@ This project demonstrates fundamental networking concepts by implementing VLAN s
 
 ## Device Configuration
 
+Basic security and device identification are essential before implementing advanced features. Hostnames help distinguish devices in topologies.
 ### Switch Initial Setup
 <img width="531" height="188" alt="Screenshot 2025-08-08 at 6 07 50 PM" src="https://github.com/user-attachments/assets/d98bfe40-e115-4a83-93f0-f0f3b14c9093" />
 
@@ -35,7 +36,13 @@ This project demonstrates fundamental networking concepts by implementing VLAN s
 <img width="525" height="170" alt="Screenshot 2025-08-08 at 6 10 50 PM" src="https://github.com/user-attachments/assets/7f5011b5-529d-4c06-8515-248443bbef15" />
 
 
+## Creating and Configuring VLANS
+VLANs create separate broadcast domains on a single physical switch. This provides:
+- Security: Departments can't see each other's traffic by default.
+- Performance: Reduced broadcast traffic in each segment.
+- Management: Easier troubleshooting and policy application.
 
+### VLAN Configurations
 
 
 

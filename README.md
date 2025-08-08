@@ -52,6 +52,15 @@ Access ports connect end devices (PCs) to their designated VLAN. Traffic from th
 
 <img width="463" height="270" alt="Screenshot 2025-08-08 at 6 43 21 PM" src="https://github.com/user-attachments/assets/11072914-09c5-46bf-b998-2d62a545b64d" />
 
+#
+### Configuring Trunk Port to Router
+Trunk ports are essential for router-on-a-stick. They:
+- Transport multiple VLANs over a single physical link
+- Add 802.1Q tags to identify which VLAN each frame belongs to
+- Use native VLAN for management traffic (security best practice: not VLAN 1)
+- Control VLAN propagation by specifying allowed VLANs
+<img width="599" height="125" alt="Screenshot 2025-08-08 at 6 49 39 PM" src="https://github.com/user-attachments/assets/6654d151-5821-45d7-bbd9-00b362ef4a64" />
+
 
 #
 ### Learning Outcomes

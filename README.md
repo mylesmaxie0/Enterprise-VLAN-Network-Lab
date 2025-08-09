@@ -108,6 +108,16 @@ Subinterfaces enable the router to:
 - Serve as the default gateway for each department
 - Process tagged frames from specific VLANs
 - Maintain separate routing tables per VLAN
+
+#### Command Breakdown:
+`interface g0/0.10`: Creates a logical subinterface numbered .10 (to match VLAN number)
+
+`encapsulation dot1Q 10`: Tells router to process frames with 802.1Q tag value of 10
+
+`ip address 192.168.10.1 255.255.255.0`: Assigns an IP address that serves as the default gateway for VLAN 10
+
+`encapsulation dot1Q 99 native`: Processes untagged frames and assigns them to VLAN 99
+
 <img width="787" height="707" alt="Screenshot 2025-08-08 at 7 13 23 PM" src="https://github.com/user-attachments/assets/6ad65f5e-99b6-4a79-9069-f5cb7b49eb50" />
 
 

@@ -201,7 +201,8 @@ Sales ↔ HR: Sales shouldn't see payroll data, and HR shouldn't see customer de
 #### HR PC5 → HR PC6: ✅ Should work
 <img width="1252" height="442" alt="Screenshot 2025-08-09 at 1 02 22 PM" src="https://github.com/user-attachments/assets/8fb315cf-9618-478f-9ce7-6fdb5a6a80d4" />
 
-##### Test 2: Inter-VLAN Communication
+
+#### Test 2: Inter-VLAN Communication
 
 #### Sales PC1 → IT PC3: ✅ Should work
 <img width="1254" height="465" alt="Screenshot 2025-08-09 at 1 06 30 PM" src="https://github.com/user-attachments/assets/f50e3879-ac78-4c99-b349-a57592811da9" />

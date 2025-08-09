@@ -214,6 +214,18 @@ Sales ↔ HR: Sales shouldn't see payroll data, and HR shouldn't see customer de
 <img width="1238" height="462" alt="Screenshot 2025-08-09 at 1 14 44 PM" src="https://github.com/user-attachments/assets/eb7995e8-764c-4d63-a33a-08a820723c68" />
 
 #
+
+### Troubleshooting 
+
+#### Common Issues
+| Issue | Symptoms | Solution |
+|----------|----------|----------|
+| No inter-VLAN communication    | PC's can't reach other VLANs    | Check trunk configuration and subinterfaces    |
+| VLAN assignment    | PC can't reach gateway    | Verify port VLAN assignment    |
+| Trunk not passing VLANs    | show interfaces trunk shows no VLANs    | Check allowed VLAN list    |
+#
+
+
 ### Learning Outcomes
 - VLAN creation and management
 - Switch port assignment and configuration

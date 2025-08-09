@@ -46,6 +46,11 @@ VLANs create separate broadcast domains on a single physical switch. This provid
 
 <img width="506" height="451" alt="Screenshot 2025-08-08 at 6 37 41 PM" src="https://github.com/user-attachments/assets/a11a218a-9437-4dac-9c1f-eff143b71e7f" />
 
+Command Breakdown:
+- `vlan 10`: Creates VLAN 10 in the switch's VLAN database and enters VLAN configuration mode.
+- `name Sales`: Assigns a descriptive name to VLAN 10
+- `exit`: Exits VLAN configuration mode and returns to global configuration mode
+  
 #
 ### Assigning Switch Ports to VLANs
 Access ports connect end devices (PCs) to their designated VLAN. Traffic from these devices remains untagged - the switch handles VLAN tagging internally. Without proper VLAN assignment, devices would all be in VLAN 1 (default).

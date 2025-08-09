@@ -67,6 +67,14 @@ Access ports connect end devices (PCs) to their designated VLAN. Traffic from th
 
 <img width="463" height="270" alt="Screenshot 2025-08-08 at 6 43 21 PM" src="https://github.com/user-attachments/assets/11072914-09c5-46bf-b998-2d62a545b64d" />
 
+#### Verifying VLAN Configurations
+<img width="760" height="328" alt="Screenshot 2025-08-09 at 11 51 22 AM" src="https://github.com/user-attachments/assets/90fa9db3-04ac-4b4b-b36a-cc321b1e134e" />
+
+`interface f0/2 - 3 is set to VLAN 10 (Sales)`
+
+`interface f0/4 - 5 is set to VLAN 20 (IT)`
+
+`interface f0/6 - 7 is set to VLAN 30 (HR)`
 #
 ### Configuring Trunk Port to Router
 Trunk ports are essential for router-on-a-stick. They:
@@ -139,6 +147,43 @@ HR PC2: IP: 192.168.30.11, Gateway: 192.168.30.1
 
 ### Applying Access Control List
 
+#### Real-World Scenario:
+In this lab, I created 3 departments:
+
+Sales: handles customer data
+
+HR: manages payroll, personal info
+
+IT: supports all departments, needs access everywhere
+
+#### ACL Requirements
+Sales ↔ IT: IT needs to support Sales systems
+
+HR ↔ IT: IT needs to support HR systems
+
+Sales ↔ HR: Sales shouldn't see payroll data, and HR shouldn't see customer deals        
+
+
+#### Deny any IP traffic from HR network (192.168.30.0/24) to Sales network (192.168.10.0/24)
+`R1(config)# access-list 100 deny ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255`
+
+#### Deny any IP traffic from Sales network (192.168.10.0/24) to HR network (192.168.30.0/24)
+`access-list 100 deny ip 192.168.10.0 0.0.0.255 192.168.30.0 0.0.0.255`
+
+#### Allow all other IP traffic (required because ACLs have implicit deny-all at end)
+`access-list 100 permit ip any any`
+
+#### Apply ACL to Sales VLAN subinterface (inbound direction)
+`R1(config)# interface gi0/0.10`
+
+`R1(config-subif)# ip access-group 100 in`
+
+#### Apply ACL to HR VLAN subinterface (inbound direction)
+`R1(config)# interface gi0/0.30`
+
+`R1(config-subif)# ip access-group 100 in`
+
+<img width="700" height="239" alt="Screenshot 2025-08-09 at 12 31 00 PM" src="https://github.com/user-attachments/assets/3bb66cd5-c3ac-434d-942a-4f74750ca416" />
 
 
 

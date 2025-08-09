@@ -44,16 +44,26 @@ VLANs create separate broadcast domains on a single physical switch. This provid
 - Performance: Reduced broadcast traffic in each segment.
 - Management: Easier troubleshooting and policy application.
 
-<img width="506" height="451" alt="Screenshot 2025-08-08 at 6 37 41 PM" src="https://github.com/user-attachments/assets/a11a218a-9437-4dac-9c1f-eff143b71e7f" />
+#### Command Breakdown:
+`vlan 10`: Creates VLAN 10 in the switch's VLAN database and enters VLAN configuration mode.
 
-Command Breakdown:
-- `vlan 10`: Creates VLAN 10 in the switch's VLAN database and enters VLAN configuration mode.
-- `name Sales`: Assigns a descriptive name to VLAN 10
-- `exit`: Exits VLAN configuration mode and returns to global configuration mode
+`name Sales`: Assigns a descriptive name to VLAN 10
+
+`exit`: Exits VLAN configuration mode and returns to global configuration mode
+  
+<img width="506" height="451" alt="Screenshot 2025-08-08 at 6 37 41 PM" src="https://github.com/user-attachments/assets/a11a218a-9437-4dac-9c1f-eff143b71e7f" />
   
 #
 ### Assigning Switch Ports to VLANs
 Access ports connect end devices (PCs) to their designated VLAN. Traffic from these devices remains untagged - the switch handles VLAN tagging internally. Without proper VLAN assignment, devices would all be in VLAN 1 (default).
+
+#### Command Breakdown:
+`interface range f0/2 - 3`: Enters configuration mode for ports fa0/2 and fa0/3 simultaneously
+
+`switchport mode access`: Configures port as an access port (connects to end devices, single VLAN)
+
+`switchport access vlan 10`: Assigns the access port to VLAN 10
+
 
 <img width="463" height="270" alt="Screenshot 2025-08-08 at 6 43 21 PM" src="https://github.com/user-attachments/assets/11072914-09c5-46bf-b998-2d62a545b64d" />
 
@@ -64,11 +74,26 @@ Trunk ports are essential for router-on-a-stick. They:
 - Add 802.1Q tags to identify which VLAN each frame belongs to
 - Use native VLAN for management traffic (security best practice: not VLAN 1)
 - Control VLAN propagation by specifying allowed VLANs
+
+#### Command Breakdown:
+`interface g0/1`: Enters interface configuration mode for the GigabitEthernet port
+
+`switchport mode trunk`: Enables 802.1Q trunking (allows multiple VLANs on this port)
+
+`switchport trunk native vlan 99`: Sets VLAN 99 as the native VLAN (frames sent untagged)
+
+`switchport trunk allowed vlan 10, 20, 30, 99`: Restricts which VLANs can traverse this trunk
+
 <img width="599" height="125" alt="Screenshot 2025-08-08 at 6 49 39 PM" src="https://github.com/user-attachments/assets/6654d151-5821-45d7-bbd9-00b362ef4a64" />
 
 #
 ### Router Physical Interface Activation
 The physical interface must be active before any subinterfaces can function. This single interface will handle traffic for all VLANs through subinterfaces.
+
+#### Command Breakdown:
+`interface g0/1`: Enters interface configuration mode for the physical GigabitEthernet port
+
+`no shutdown`: Removes the default administrative state, bringing the interface up
 
 <img width="719" height="275" alt="Screenshot 2025-08-08 at 6 56 43 PM" src="https://github.com/user-attachments/assets/a0825b64-11e5-4ece-993e-51d7261460c4" />
 

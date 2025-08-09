@@ -120,6 +120,27 @@ Subinterfaces enable the router to:
 
 <img width="787" height="707" alt="Screenshot 2025-08-08 at 7 13 23 PM" src="https://github.com/user-attachments/assets/6ad65f5e-99b6-4a79-9069-f5cb7b49eb50" />
 
+#
+### Configuring End Devices
+#### PC IP Configuration
+Sales PC1: IP: 192.168.10.10, Gateway: 192.168.10.1
+
+Sales PC2: IP: 192.168.10.11, Gateway: 192.168.10.1
+
+IT PC1: IP: 192.168.20.10, Gateway: 192.168.20.1
+
+IT PC2: IP: 192.168.20.11, Gateway: 192.168.20.1
+
+HR PC1: IP: 192.168.30.10, Gateway: 192.168.30.1
+
+HR PC2: IP: 192.168.30.11, Gateway: 192.168.30.1
+
+#
+
+### Applying Access Control List
+
+
+
 
 #
 ### Learning Outcomes

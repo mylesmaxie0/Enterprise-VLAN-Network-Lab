@@ -234,3 +234,4 @@ Sales ↔ HR: Sales shouldn't see payroll data, and HR shouldn't see customer de
 - Subinterface configuration and encapsulation
 - Inter-VLAN routing concepts
 - Access Control List implementation
+- Network troubleshooting methodologies

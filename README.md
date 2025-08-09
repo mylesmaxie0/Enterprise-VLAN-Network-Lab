@@ -184,7 +184,22 @@ Sales ↔ HR: Sales shouldn't see payroll data, and HR shouldn't see customer de
 `R1(config-subif)# ip access-group 100 in`
 
 <img width="700" height="239" alt="Screenshot 2025-08-09 at 12 31 00 PM" src="https://github.com/user-attachments/assets/3bb66cd5-c3ac-434d-942a-4f74750ca416" />
+#
 
+# Testing and Validation
+#### Test 1: Intra-VLAN Communication
+
+#### Sales PC1 → Sales PC2: ✅ Should work
+<img width="1253" height="472" alt="Screenshot 2025-08-09 at 12 51 33 PM" src="https://github.com/user-attachments/assets/2e9165a8-688b-467a-9714-1df1ee87caf8" />
+
+
+
+#### IT PC3 → IT PC4: ✅ Should work  
+<img width="1242" height="441" alt="Screenshot 2025-08-09 at 12 59 58 PM" src="https://github.com/user-attachments/assets/7ce7f3b1-df4d-47f6-93de-f7091a9c8969" />
+
+
+#### HR PC5 → HR PC6: ✅ Should work
+<img width="1252" height="442" alt="Screenshot 2025-08-09 at 1 02 22 PM" src="https://github.com/user-attachments/assets/8fb315cf-9618-478f-9ce7-6fdb5a6a80d4" />
 
 
 #
